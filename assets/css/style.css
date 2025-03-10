@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.topBar {
+  position: relative;
+  height: 10px;
+  background-color: #157698;
+  border-radius: 10px 10px 0 0;
+}
+.topBar img {
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  width: 500px;
+  z-index: -1;
+}
+@media (max-width: 1024px) {
+  .topBar img {
+    display: none;
+  }
+}
+
+.nameSection {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 60px;
+}
+.nameSection .myPhoto {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 767px) {
+  .nameSection .myPhoto {
+    margin-bottom: 40px;
+  }
+}
+.nameSection .myPhoto img {
+  width: 100%;
+  border-radius: 10px;
+}
+.nameSection .myName {
+  position: relative;
+}
+.nameSection .myName h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.5%;
+  color: #157698;
+  margin-bottom: 16px;
+}
+.nameSection .myName h1 span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.5%;
+  color: #A9A9A9;
+}
+.nameSection .myName h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0.5%;
+  text-transform: uppercase;
+  color: #157698;
+  margin-bottom: 40px;
+}
+.nameSection .importantLinks {
+  position: relative;
+  border: solid 1px #999999;
+  border-left: none;
+  border-right: none;
+  padding: 20px 0;
+}
+.nameSection .importantLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nameSection .importantLinks ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 24px;
+}
+.nameSection .importantLinks ul li:nth-child(3), .nameSection .importantLinks ul li:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .nameSection .importantLinks ul li {
+    width: 100%;
+    margin-bottom: 16px !important;
+  }
+}
+.nameSection .importantLinks ul li span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #157698;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nameSection .importantLinks ul li a {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.nameSection .importantLinks ul li a:hover {
+  transition: all 0.5s ease;
+  color: #157698;
+}
+
+.scalingBanner {
+  position: relative;
+  margin-bottom: 60px;
+}
+.scalingBanner .scalingBannerContainer {
+  position: relative;
+}
+.scalingBanner .scalingBannerContainer img {
+  width: 100%;
+}
+
+.contactDetails {
+  position: relative;
+  margin-bottom: 60px;
+}
+.contactDetails h2 {
+  font-family: "Poppins", sans-serif;
+  color: #157698;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+.contactDetails ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contactDetails ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.contactDetails ul li svg {
+  margin-right: 10px;
+}
+.contactDetails ul li a {
+  text-decoration: none;
+  color: #4F4F4F;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 5%;
+}
+
+.myExperience {
+  position: relative;
+  margin-bottom: 10px;
+}
+.myExperience h2 {
+  font-family: "Poppins", sans-serif;
+  color: #157698;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.myExperience h2 svg {
+  margin-right: 10px;
+}
+.myExperience span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  color: #666666;
+  position: relative;
+  left: 34px;
+  top: -10px;
+}
+
+.experienceNumberOne {
+  position: relative;
+  margin-bottom: 40px;
+}
+.experienceNumberOne img {
+  width: 180px;
+  margin-bottom: 6px;
+}
+.experienceNumberOne h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+}
+.experienceNumberOne span {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  padding-left: 40px;
+  color: #999999;
+}
+.experienceNumberOne span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  top: 8px;
+  background-color: #999999;
+  width: 34px;
+  height: 3px;
+  border-radius: 10px;
+}
+.experienceNumberOne ul {
+  margin: 16px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.experienceNumberOne ul li {
+  position: relative;
+  padding: 0 0 0 20px;
+  color: #666666;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  margin-bottom: 16px;
+}
+.experienceNumberOne ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #666666;
+}
+
+.myEducations {
+  position: relative;
+}
+.myEducations h2 {
+  font-family: "Poppins", sans-serif;
+  color: #157698;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.myEducations h2 svg {
+  margin-right: 10px;
+}
+.myEducations .educationDegree {
+  position: relative;
+  margin-top: 24px;
+}
+.myEducations .educationDegree h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  margin: 0;
+}
+.myEducations .educationDegree span {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  padding-left: 40px;
+  color: #999999;
+}
+.myEducations .educationDegree span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  top: 8px;
+  background-color: #999999;
+  width: 34px;
+  height: 3px;
+  border-radius: 10px;
+}
+.myEducations .educationDegree p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  color: #666666;
+  margin: 16px 0 0 0;
+}
+
+.mysummary {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .mysummary {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+.mysummary h2 {
+  font-family: "Poppins", sans-serif;
+  color: #157698;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+.mysummary h2 span {
+  background-color: #FFFFC7;
+  font-size: 14px;
+  color: #666666;
+  padding: 2px 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.mysummary p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #666666;
+  margin-bottom: 16px;
+}
+.mysummary p strong {
+  font-weight: 700;
+}
+
+.mysummary.FeaturedContent h6 {
+  position: relative;
+  padding-left: 0px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
+.mysummary.FeaturedContent h6 svg {
+  margin-right: 16px;
+}
+.mysummary.FeaturedContent h6 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .mysummary.FeaturedContent h6 ul {
+    flex-wrap: wrap;
+  }
+}
+.mysummary.FeaturedContent h6 ul li {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: solid 2px #666666;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  text-transform: capitalize;
+}
+.mysummary.FeaturedContent h6 ul li a {
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+.mysummary.FeaturedContent h6 ul li a:hover {
+  transition: all 0.5s ease;
+  color: #157698;
+}
+.mysummary.FeaturedContent h6 ul li:first-child, .mysummary.FeaturedContent h6 ul li:last-child {
+  border-right: none;
+}
+
+.myFuture {
+  position: relative;
+}
+.myFuture .myFutureContainer {
+  position: relative;
+  margin-bottom: 40px;
+}
+.myFuture .myFutureContainer h2 {
+  font-family: "Poppins", sans-serif;
+  color: #157698;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.myFuture .myFutureContainer h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+}
+.myFuture .myFutureContainer span {
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  position: relative;
+  top: 5px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.myFuture .myFutureContainer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #4F4F4F;
+  margin-bottom: 20px;
+}
+.myFuture .myFutureContainer p strong {
+  color: #4F4F4F;
+  font-weight: 600;
+}
+.myFuture .myFutureContainer ul {
+  padding: 0 0 0 18px;
+}
+.myFuture .myFutureContainer ul li {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #4F4F4F;
+}
+.myFuture .myFutureContainer ul li strong {
+  color: #4F4F4F;
+  font-weight: 600;
+}
+.myFuture .myFutureContainer ul li:last-child {
+  margin-bottom: 0;
+}
+
+.myFutureContainer.myContactDetails ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .myFutureContainer.myContactDetails ul {
+    flex-wrap: wrap;
+  }
+}
+.myFutureContainer.myContactDetails ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 33.33%;
+}
+.myFutureContainer.myContactDetails ul li:first-child span {
+  background-color: transparent;
+}
+@media (max-width: 1024px) {
+  .myFutureContainer.myContactDetails ul li {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .myFutureContainer.myContactDetails ul li {
+    width: 100%;
+  }
+}
+.myFutureContainer.myContactDetails ul li span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #157698;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  margin-bottom: 0;
+}
+.myFutureContainer.myContactDetails ul li a {
+  color: #4F4F4F;
+  margin: 0;
+}
+
+footer {
+  background-color: #157698;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
