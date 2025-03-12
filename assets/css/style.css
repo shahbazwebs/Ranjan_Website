@@ -94,6 +94,25 @@ h1, h2, h3, h4, h5, h6 {
   border-right: none;
   padding: 20px 0;
 }
+.nameSection .importantLinks .instagramQRCode,
+.nameSection .importantLinks .YouTubeQRCode {
+  position: absolute;
+  width: 80px;
+  border-radius: 10px;
+  top: 24px;
+}
+@media (max-width: 767px) {
+  .nameSection .importantLinks .instagramQRCode,
+  .nameSection .importantLinks .YouTubeQRCode {
+    display: none;
+  }
+}
+.nameSection .importantLinks .instagramQRCode {
+  left: 36%;
+}
+.nameSection .importantLinks .YouTubeQRCode {
+  left: 84%;
+}
 .nameSection .importantLinks ul {
   list-style: none;
   padding: 0;
@@ -162,7 +181,6 @@ h1, h2, h3, h4, h5, h6 {
 .contactDetails h2 {
   font-family: "Poppins", sans-serif;
   color: #157698;
-  font-family: Poppins;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -202,7 +220,6 @@ h1, h2, h3, h4, h5, h6 {
 .myExperience h2 {
   font-family: "Poppins", sans-serif;
   color: #157698;
-  font-family: Poppins;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -335,7 +352,6 @@ h1, h2, h3, h4, h5, h6 {
 .myEducations h2 {
   font-family: "Poppins", sans-serif;
   color: #157698;
-  font-family: Poppins;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -407,23 +423,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 40px;
   }
 }
-.mysummary img {
-  position: absolute;
-  right: 0;
-  top: -60px;
-}
-.mysummary .instagramQRCode {
-  width: 100px;
-  left: 170px;
-}
-.mysummary .YouTubeQRCode {
-  width: 100px;
-  left: 270px;
-}
 .mysummary h2 {
   font-family: "Poppins", sans-serif;
   color: #157698;
-  font-family: Poppins;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -456,14 +458,13 @@ h1, h2, h3, h4, h5, h6 {
 .mysummary.withSubHeading h2 {
   font-family: "Poppins", sans-serif;
   color: #157698;
-  font-family: Poppins;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 .mysummary.withSubHeading p {
   font-size: 16px !important;
@@ -523,13 +524,13 @@ h1, h2, h3, h4, h5, h6 {
 .myFuture .myFutureContainer h2 {
   font-family: "Poppins", sans-serif;
   color: #157698;
-  font-family: Poppins;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
 }
 .myFuture .myFutureContainer h3 {
   font-family: "Poppins", sans-serif;
@@ -641,6 +642,17 @@ footer {
   background-color: #157698;
   padding: 10px;
   margin-top: 40px;
+}
+
+.rightSidePastExperience {
+  position: sticky;
+  top: 10px;
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .rightSidePastExperience {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
