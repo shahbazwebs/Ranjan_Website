@@ -6,6 +6,10 @@ html, body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -160,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #157698;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -200,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #157698;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -233,6 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 .experienceNumberOne img {
   width: 180px;
   margin-bottom: 6px;
+  margin-left: -6px;
 }
 .experienceNumberOne h4 {
   font-family: "Poppins", sans-serif;
@@ -294,6 +299,35 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   background-color: #666666;
 }
+.experienceNumberOne .viewPastExperience {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.experienceNumberOne .viewPastExperience a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  color: #0000FF;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.experienceNumberOne .viewPastExperience a svg {
+  margin-right: 6px;
+}
+.experienceNumberOne .viewPastExperience a:hover {
+  transition: all 0.5s ease;
+  color: #157698;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .myEducations {
   position: relative;
@@ -303,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #157698;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -373,12 +407,25 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 40px;
   }
 }
+.mysummary img {
+  position: absolute;
+  right: 0;
+  top: -60px;
+}
+.mysummary .instagramQRCode {
+  width: 100px;
+  left: 170px;
+}
+.mysummary .YouTubeQRCode {
+  width: 100px;
+  left: 270px;
+}
 .mysummary h2 {
   font-family: "Poppins", sans-serif;
   color: #157698;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -396,14 +443,31 @@ h1, h2, h3, h4, h5, h6 {
 .mysummary p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   letter-spacing: 0%;
   color: #666666;
   margin-bottom: 16px;
 }
 .mysummary p strong {
   font-weight: 700;
+}
+
+.mysummary.withSubHeading h2 {
+  font-family: "Poppins", sans-serif;
+  color: #157698;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 20px !important;
+}
+.mysummary.withSubHeading p {
+  font-size: 16px !important;
+  margin-bottom: 10px !important;
 }
 
 .mysummary.FeaturedContent h6 {
@@ -461,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #157698;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -470,7 +534,7 @@ h1, h2, h3, h4, h5, h6 {
 .myFuture .myFutureContainer h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 100%;
   letter-spacing: 3%;
   vertical-align: middle;
@@ -482,7 +546,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 100%;
   letter-spacing: 3%;
   vertical-align: middle;
@@ -496,7 +560,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   letter-spacing: 0%;
   color: #4F4F4F;
   margin-bottom: 20px;

@@ -15,6 +15,9 @@ html,body{
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
 }
@@ -23,7 +26,7 @@ body{
     color: $themeColor;
     font-family: Poppins;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
@@ -225,6 +228,7 @@ h1,h2,h3,h4,h5,h6{
     img{
         width: 180px;
         margin-bottom: 6px;
+        margin-left: -6px;
     }
     h4{
         font-family: $poppinsFont;
@@ -283,6 +287,35 @@ h1,h2,h3,h4,h5,h6{
                 height: 5px;
                 border-radius: 50%;
                 background-color: #666666;
+            }
+        }
+    }
+    .viewPastExperience{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: $robotFont;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 3%;
+            vertical-align: middle;
+            color: #0000FF;
+            transition: $transition;
+            text-decoration: none;
+            svg{
+                margin-right: 6px;
+            }
+            &:hover{
+                transition: $transition;
+                color: $themeColor;
+                cursor: pointer;
+                text-decoration: underline;
             }
         }
     }
@@ -353,6 +386,19 @@ h1,h2,h3,h4,h5,h6{
         margin-bottom: 40px;
         margin-top: 40px;
     }
+    img{
+        position: absolute;
+        right: 0;
+        top: -60px;
+    }
+    .instagramQRCode{
+        width: 100px;
+        left: 170px;
+    }
+    .YouTubeQRCode{
+        width: 100px;
+        left: 270px;
+    }
     h2{
         @include subHeading();
         margin-bottom: 24px;
@@ -368,14 +414,24 @@ h1,h2,h3,h4,h5,h6{
     p{
         font-family: $robotFont;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 28px;
         letter-spacing: 0%;
         color: #666666;
         margin-bottom: 16px;
         strong{
             font-weight: 700;
         }
+    }
+}
+.mysummary.withSubHeading{
+    h2{
+        @include subHeading();
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
     }
 }
 .mysummary.FeaturedContent{
@@ -432,7 +488,7 @@ h1,h2,h3,h4,h5,h6{
         h3{
             font-family: $poppinsFont;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 100%;
             letter-spacing: 3%;
             vertical-align: middle;
@@ -444,7 +500,7 @@ h1,h2,h3,h4,h5,h6{
             color: #333333;
             font-family: $poppinsFont;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 100%;
             letter-spacing: 3%;
             vertical-align: middle;
@@ -458,7 +514,7 @@ h1,h2,h3,h4,h5,h6{
             font-family: $robotFont;
             font-weight: 400;
             font-size: 18px;
-            line-height: 24px;
+            line-height: 26px;
             letter-spacing: 0%;
             color: $fontsColor;
             margin-bottom: 20px;
