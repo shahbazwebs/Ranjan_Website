@@ -514,6 +514,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mysummary.FeaturedContent h6 svg {
   margin-right: 16px;
+  min-width: 14px;
 }
 @media (max-width: 575px) {
   .mysummary.FeaturedContent h6 svg {
