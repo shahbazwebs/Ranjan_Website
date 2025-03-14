@@ -43,6 +43,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 80px;
   margin-bottom: 60px;
 }
+@media (max-width: 767px) {
+  .nameSection {
+    margin-bottom: 20px;
+  }
+}
 .nameSection .myPhoto {
   position: relative;
   overflow: hidden;
@@ -69,6 +74,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #157698;
   margin-bottom: 16px;
 }
+@media (max-width: 767px) {
+  .nameSection .myName h1 {
+    font-size: 40px;
+  }
+}
 .nameSection .myName h1 span {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -76,6 +86,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
   letter-spacing: 0.5%;
   color: #A9A9A9;
+}
+@media (max-width: 767px) {
+  .nameSection .myName h1 span {
+    font-size: 40px;
+  }
 }
 .nameSection .myName h4 {
   font-family: "Roboto", sans-serif;
@@ -94,12 +109,19 @@ h1, h2, h3, h4, h5, h6 {
   border-right: none;
   padding: 20px 0;
 }
+@media (max-width: 767px) {
+  .nameSection .importantLinks {
+    display: none;
+  }
+}
 .nameSection .importantLinks .instagramQRCode,
 .nameSection .importantLinks .YouTubeQRCode {
   position: absolute;
   width: 80px;
+  height: 80px;
   border-radius: 10px;
   top: 24px;
+  object-fit: none;
 }
 @media (max-width: 767px) {
   .nameSection .importantLinks .instagramQRCode,
@@ -177,6 +199,11 @@ h1, h2, h3, h4, h5, h6 {
 .contactDetails {
   position: relative;
   margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .contactDetails {
+    display: none;
+  }
 }
 .contactDetails h2 {
   font-family: "Poppins", sans-serif;
@@ -421,6 +448,7 @@ h1, h2, h3, h4, h5, h6 {
   .mysummary {
     margin-bottom: 40px;
     margin-top: 40px;
+    padding-left: 0;
   }
 }
 .mysummary h2 {
@@ -441,6 +469,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2px 10px;
   text-transform: capitalize;
   font-weight: 500;
+}
+@media (max-width: 575px) {
+  .mysummary h2 span {
+    display: inline-block;
+  }
 }
 .mysummary p {
   font-family: "Roboto", sans-serif;
@@ -482,6 +515,12 @@ h1, h2, h3, h4, h5, h6 {
 .mysummary.FeaturedContent h6 svg {
   margin-right: 16px;
 }
+@media (max-width: 575px) {
+  .mysummary.FeaturedContent h6 svg {
+    position: relative;
+    top: -10px;
+  }
+}
 .mysummary.FeaturedContent h6 ul {
   list-style: none;
   padding: 0;
@@ -512,6 +551,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mysummary.FeaturedContent h6 ul li:first-child, .mysummary.FeaturedContent h6 ul li:last-child {
   border-right: none;
+}
+@media (max-width: 575px) {
+  .mysummary.FeaturedContent h6 ul li:first-child {
+    width: 100%;
+    margin-bottom: 6px;
+  }
 }
 
 .myFuture {
@@ -590,52 +635,111 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.myFutureContainer.myContactDetails ul {
+.myFutureContainer.myContactDetails {
+  position: relative;
+}
+.myFutureContainer.myContactDetails .contactNumber {
   list-style: none;
-  padding: 0;
   margin: 0 0 20px 0;
+  padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-@media (max-width: 1024px) {
-  .myFutureContainer.myContactDetails ul {
-    flex-wrap: wrap;
-  }
-}
-.myFutureContainer.myContactDetails ul li {
+.myFutureContainer.myContactDetails .contactNumber li {
   position: relative;
   display: flex;
   align-items: center;
-  width: 33.33%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: #4F4F4F;
+  margin: 0 0 20px 0 !important;
+  width: 50%;
 }
-.myFutureContainer.myContactDetails ul li:first-child span {
-  background-color: transparent;
+.myFutureContainer.myContactDetails .contactNumber li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: #4F4F4F;
+  margin: 0;
+  text-decoration: none;
 }
-@media (max-width: 1024px) {
-  .myFutureContainer.myContactDetails ul li {
-    flex-wrap: wrap;
-    width: 50%;
-  }
+.myFutureContainer.myContactDetails .contactNumber li a:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+  color: #157698;
+  cursor: pointer;
 }
-@media (max-width: 575px) {
-  .myFutureContainer.myContactDetails ul li {
-    width: 100%;
-  }
+.myFutureContainer.myContactDetails .contactNumber li svg {
+  margin-right: 10px;
 }
-.myFutureContainer.myContactDetails ul li span {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #157698;
+.myFutureContainer.myContactDetails h4 {
+  font-family: "Poppins", sans-serif;
+  color: #157698;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.myFutureContainer.myContactDetails .vlogDetails {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.myFutureContainer.myContactDetails .vlogDetails li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 !important;
+}
+.myFutureContainer.myContactDetails .vlogDetails li img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.myFutureContainer.myContactDetails .vlogDetails li span {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 6px;
-  margin-bottom: 0;
 }
-.myFutureContainer.myContactDetails ul li a {
+.myFutureContainer.myContactDetails .vlogDetails li span svg {
+  margin-right: 4px;
+}
+.myFutureContainer.myContactDetails .vlogDetails li span a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 5%;
   color: #4F4F4F;
   margin: 0;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+.myFutureContainer.myContactDetails .vlogDetails li span a:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+  color: #157698;
+  cursor: pointer;
 }
 
 footer {
