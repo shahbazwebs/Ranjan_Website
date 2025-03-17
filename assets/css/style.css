@@ -108,81 +108,57 @@ h1, h2, h3, h4, h5, h6 {
   border-left: none;
   border-right: none;
   padding: 20px 0;
+  display: flex;
 }
 @media (max-width: 767px) {
   .nameSection .importantLinks {
     display: none;
   }
 }
-.nameSection .importantLinks .instagramQRCode,
-.nameSection .importantLinks .YouTubeQRCode {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  top: 24px;
-  object-fit: none;
-}
-@media (max-width: 767px) {
-  .nameSection .importantLinks .instagramQRCode,
-  .nameSection .importantLinks .YouTubeQRCode {
-    display: none;
-  }
-}
-.nameSection .importantLinks .instagramQRCode {
-  left: 36%;
-}
-.nameSection .importantLinks .YouTubeQRCode {
-  left: 84%;
-}
-.nameSection .importantLinks ul {
+.nameSection .importantLinks .topContactDetails {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
-.nameSection .importantLinks ul li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin-bottom: 24px;
-}
-.nameSection .importantLinks ul li:nth-child(3), .nameSection .importantLinks ul li:last-child {
-  margin-bottom: 0;
-}
-@media (max-width: 1024px) {
-  .nameSection .importantLinks ul li {
-    width: 100%;
-    margin-bottom: 16px !important;
-  }
-}
-.nameSection .importantLinks ul li span {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #157698;
-  margin-right: 16px;
+.nameSection .importantLinks .topContactDetails li {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-.nameSection .importantLinks ul li a {
-  color: #333333;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+.nameSection .importantLinks .topContactDetails li img {
+  margin-bottom: 0px;
+  width: 150px;
+  object-fit: none;
+}
+.nameSection .importantLinks .topContactDetails li a {
   font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 3%;
-  text-decoration: underline;
+  color: #4F4F4F;
+  text-decoration: none;
   transition: all 0.5s ease;
 }
-.nameSection .importantLinks ul li a:hover {
+.nameSection .importantLinks .topContactDetails li a:hover {
   transition: all 0.5s ease;
+  text-decoration: underline;
   color: #157698;
+}
+.nameSection .importantLinks .nameAndWebsiteLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 50px;
+}
+.nameSection .importantLinks .nameAndWebsiteLink li {
+  margin-bottom: 20px;
 }
 
 .scalingBanner {
